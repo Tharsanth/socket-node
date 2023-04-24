@@ -34,7 +34,7 @@ io.on("connection", (socket) => {
 
   socket.on("my-event", (data) => {
     console.log("Received data:", data);
-    socket.emit("my-event-response", "Received data successfully");
+    io.emit("my-event-response", "Received data successfully");
   });
 
   socket.on("disconnect", () => {
