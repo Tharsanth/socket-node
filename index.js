@@ -22,7 +22,7 @@ const server = app.listen(PORT, () =>
 const io = new Server(server, {
   pingTimeout : 600000,
   cors : {
-    origin : "http://localhost:3001"
+    origin : "https://devtest.zls.app"
   }
 });
 const connectedClients = {};
