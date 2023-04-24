@@ -22,7 +22,7 @@ const server = app.listen(PORT, () =>
 const io = new Server(server, {
   pingTimeout : 600000,
   cors : {
-    origin : "https://dev.zls.app"
+    origin : "https://main--magical-flan-9b21ee.netlify.app"
   }
 });
 const connectedClients = {};
